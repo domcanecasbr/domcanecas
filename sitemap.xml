@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://domcanecas.com.br/</loc><priority>1.0</priority></url>
-  <url><loc>https://domcanecas.com.br/canecas/minha-bateria-social-acabou/</loc><priority>0.8</priority></url>
-  <url><loc>https://domcanecas.com.br/canecas/hoje-eu-nao-to-boa-pra-sociedade/</loc><priority>0.8</priority></url>
-  <url><loc>https://domcanecas.com.br/canecas/eu-fingindo-que-entendi/</loc><priority>0.8</priority></url>
-  <url><loc>https://domcanecas.com.br/canecas/essa-reuniao-podia-ser-um-email/</loc><priority>0.8</priority></url>
-  <url><loc>https://domcanecas.com.br/canecas/so-mais-cinco-minutinhos/</loc><priority>0.8</priority></url>
-  <url><loc>https://domcanecas.com.br/canecas/minha-cara-quando/</loc><priority>0.8</priority></url>
-  <url><loc>https://domcanecas.com.br/canecas/minha-cara-quando-quadrinhos/</loc><priority>0.8</priority></url>
-  <url><loc>https://domcanecas.com.br/canecas/nao-fale-comigo-antes-do-cafe/</loc><priority>0.8</priority></url>
-  <url><loc>https://domcanecas.com.br/canecas/eu-tentando-ser-adulta/</loc><priority>0.8</priority></url>
+  <url><loc>https://domcanecas.com.br/</loc></url>
+  <url><loc>https://domcanecas.com.br/canecas/</loc></url>
+  <url><loc>https://domcanecas.com.br/personalizacao/</loc></url>
+  <url><loc>https://domcanecas.com.br/presentes/</loc></url>
+  <url><loc>https://domcanecas.com.br/brindes-corporativos/</loc></url>
+  <url><loc>https://domcanecas.com.br/empresas/</loc></url>
+  <url><loc>https://domcanecas.com.br/eventos/</loc></url>
+  <url><loc>https://domcanecas.com.br/como-funciona/</loc></url>
+  <url><loc>https://domcanecas.com.br/sobre/</loc></url>
+  <url><loc>https://domcanecas.com.br/faq/</loc></url>
+  <url><loc>https://domcanecas.com.br/contato/</loc></url>
+  <url><loc>https://domcanecas.com.br/campinas/</loc></url>
+  <url><loc>https://domcanecas.com.br/presentes/dia-dos-pais/</loc></url>
+  <url><loc>https://domcanecas.com.br/presentes/dia-dos-namorados/</loc></url>
+  <url><loc>https://domcanecas.com.br/presentes/aniversario/</loc></url>
 </urlset>
