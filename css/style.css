@@ -711,6 +711,74 @@ section {
 
 .icone--flutuante { width: 20px; height: 20px; stroke-width: 2; }
 
+/* Aviso de cookies (LGPD) — montado por js/main.js apenas quando ainda não há escolha salva */
+
+.consentimento {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 60;
+  background: var(--paper);
+  border-top: var(--border) solid var(--line);
+}
+
+.consentimento__conteudo {
+  width: 100%;
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: var(--e-4) var(--gutter);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--e-4);
+}
+
+.consentimento__texto {
+  margin: 0;
+  max-width: 72ch;
+  font-size: 14px;
+  color: var(--ink-70);
+}
+
+.consentimento__texto a { color: var(--ink); }
+
+.consentimento__acoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--e-3);
+}
+
+.rodape__cookies {
+  border: 0;
+  background: none;
+  padding: 0;
+  font-family: var(--fonte);
+  font-size: inherit;
+  color: var(--ink-40);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: pointer;
+}
+
+.rodape__cookies:hover { color: var(--ink); }
+
+.rodape__cookies:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 2px;
+  border-radius: var(--r-xs);
+}
+
+/* Enquanto o aviso está aberto, o botão flutuante sobe para não ficar por baixo dele */
+body.com-consentimento .whatsapp-flutuante { bottom: calc(var(--e-5) + var(--e-9)); }
+
+@media (max-width: 640px) {
+  .consentimento__conteudo { flex-direction: column; align-items: stretch; }
+  .consentimento__acoes .botao { flex: 1 1 auto; }
+  body.com-consentimento .whatsapp-flutuante { bottom: calc(var(--e-5) + 180px); }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   * { transition: none !important; }
