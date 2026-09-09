@@ -686,7 +686,8 @@ section {
   right: var(--e-5);
   width: var(--control-h);
   height: var(--control-h);
-  background: var(--ink);
+  /* teste: verde WhatsApp — reverter para var(--ink) se não aprovar */
+  background: #25D366;
   color: var(--paper);
   border-radius: var(--r-full);
   display: flex;
@@ -697,7 +698,7 @@ section {
   transition: background-color 120ms ease-out;
 }
 
-.whatsapp-flutuante:hover { background: var(--ink-70); }
+.whatsapp-flutuante:hover { background: #1DA851; }
 
 .whatsapp-flutuante:focus-visible {
   outline: 2px solid var(--ink);
