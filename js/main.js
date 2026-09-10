@@ -157,8 +157,7 @@ function iniciarConsentimento() {
   banner.hidden = true;
   banner.innerHTML =
     '<div class="consentimento__conteudo">' +
-    '<p class="consentimento__texto">Usamos cookies para entender como o site é usado e para medir nossos anúncios. ' +
-    'Você escolhe: enquanto não decidir, nada é medido. ' +
+    '<p class="consentimento__texto">Usamos cookies opcionais para medir visitas e anúncios. Até você escolher, nada é medido. ' +
     '<a href="' + caminhoPrivacidade + '">Ler a política de privacidade</a>.</p>' +
     '<div class="consentimento__acoes">' +
     '<button type="button" class="botao botao--primario" data-consentimento="aceito">Aceitar</button>' +
