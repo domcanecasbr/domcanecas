@@ -1,13 +1,15 @@
-/* Dom Canecas — Versão A mono (skill mono-ui) — design system
-   Apenas neutros R=G=B, sem sombra, sem canto reto, escala base-4, controles de 44px */
+/* Dom Canecas — product-first conversion design
+   Base neutra quente, acento terracota, escala base-4 e controles de 44px */
 
 :root {
-  --paper: #FFFFFF;
-  --surface: #F7F7F7;
-  --line: #E4E4E4;
-  --ink-40: #999999;
-  --ink-70: #4D4D4D;
-  --ink: #000000;
+  --paper: #fffdf9;
+  --surface: #f7f1e8;
+  --line: #e5ddd2;
+  --ink-40: #8b827b;
+  --ink-70: #625b55;
+  --ink: #171310;
+  --accent: #b95132;
+  --accent-dark: #7f321f;
 
   --r-xs: 6px;
   --r-sm: 10px;
@@ -322,6 +324,33 @@ section {
   color: var(--ink-70);
 }
 
+.hero__conteudo .hero__eyebrow,
+.section-kicker {
+  margin-bottom: var(--e-3);
+  color: var(--accent-dark);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.hero--home {
+  padding-top: var(--e-7);
+  background:
+    radial-gradient(circle at 86% 10%, rgba(185, 81, 50, 0.12), transparent 28rem),
+    var(--paper);
+}
+
+.hero--home .container {
+  gap: var(--e-7);
+}
+
+.hero--home h1 {
+  max-width: 13ch;
+  font-size: clamp(2.25rem, 4.2vw, 4rem);
+  letter-spacing: -0.035em;
+}
+
 .hero__acoes {
   display: flex;
   flex-wrap: wrap;
@@ -338,6 +367,54 @@ section {
 .hero__imagem img {
   width: 100%;
   border-radius: var(--r-lg);
+}
+
+.hero__imagem {
+  margin: 0;
+}
+
+.hero__imagem img {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: 62% center;
+  border: var(--border) solid var(--line);
+}
+
+.hero__imagem figcaption {
+  margin-top: var(--e-2);
+  color: var(--ink-70);
+  font-size: 13px;
+  text-align: right;
+}
+
+.faixa-confianca {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.faixa-confianca .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--e-3) var(--e-7);
+  padding-top: var(--e-4);
+  padding-bottom: var(--e-4);
+}
+
+.faixa-confianca span {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--e-2);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.faixa-confianca span::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: var(--r-full);
+  background: var(--accent);
 }
 
 /* Grid de cards (diferenciais) */
@@ -380,7 +457,8 @@ section {
   width: 44px;
   height: 44px;
   margin-bottom: var(--e-4);
-  background: var(--surface);
+  background: color-mix(in srgb, var(--accent) 12%, var(--paper));
+  color: var(--accent-dark);
   border: var(--border) solid var(--line);
   border-radius: var(--r-sm);
 }
@@ -390,6 +468,7 @@ section {
 
 .grid-cards .card:hover {
   background: var(--surface);
+  border-color: color-mix(in srgb, var(--accent) 42%, var(--line));
 }
 
 .card h3 {
@@ -398,7 +477,7 @@ section {
 }
 
 .card p {
-  font-size: 14px;
+  font-size: 16px;
   color: var(--ink-70);
   margin-bottom: 0;
 }
@@ -773,11 +852,15 @@ section {
 
 /* Enquanto o aviso está aberto, o botão flutuante sobe para não ficar por baixo dele */
 body.com-consentimento .whatsapp-flutuante { bottom: calc(var(--e-5) + var(--e-9)); }
+body.com-consentimento { padding-bottom: 88px; }
 
 @media (max-width: 640px) {
   .consentimento__conteudo { flex-direction: column; align-items: stretch; }
+  .consentimento__conteudo { padding: var(--e-3) var(--e-4); gap: var(--e-3); }
+  .consentimento__texto { font-size: 13px; line-height: 1.4; }
   .consentimento__acoes .botao { flex: 1 1 auto; }
-  body.com-consentimento .whatsapp-flutuante { bottom: calc(var(--e-5) + 180px); }
+  body.com-consentimento { padding-bottom: 172px; }
+  body.com-consentimento .whatsapp-flutuante { bottom: calc(var(--e-5) + 152px); }
 }
 
 @media (prefers-reduced-motion: reduce) {
